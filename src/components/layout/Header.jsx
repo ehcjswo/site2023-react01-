@@ -22,9 +22,6 @@ function Header(props) {
                             <Link to="/intro">소개</Link>
                         </li>
                         <li>
-                            <Link to="/member">멤버 소개</Link>
-                        </li>
-                        <li>
                             <Link to="/port">대표 메뉴</Link>
                         </li>
                         <li>

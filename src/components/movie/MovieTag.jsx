@@ -1,43 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 
-const info = [
+const movieTags = [
     {
-        id:"1",
-        title: "코미디"
+        name: "코미디",
+        url: "https://api.themoviedb.org/3/tv/latest"
     },{
-        id:"2",
-        title: "러브"
+        name: "러브",
+        url: "https://api.themoviedb.org/3/tv/latest"
     },{
-        id:"3",
-        title: "액션"
+        name: "액션",
+        url: "https://api.themoviedb.org/3/tv/latest"
     },{
-        id:"4",
-        title: "공포"
+        name: "공포",
+        url: "https://api.themoviedb.org/3/tv/latest"
     },{
-        id:"5",
-        title: "애니메이션"
+        name: "애니메이션",
+        url: "https://api.themoviedb.org/3/tv/latest"
     }
 ]
 
-const MovieTags = ({title}) => {
+const MovieTag = ({ onSearch }) => {
+    function btnClick(e) {
+        onSearch(e.target.innerText)
+    }
     return (
-        <li>
-            <Link to="/">{title}</Link>
-        </li>
-    )
-}
-
-const MovieTag = ({tag}) => {
-    return (
-        <div className="movie__tag">
-            <ul>
-                {info.map((tag, index) => (
-                    <MovieTags key={index} title={tag.title} />
+        <div className="movie__tag Nanum5">
+            <div>
+                {movieTags.map((tag, index) => (
+                    <button onClick={btnClick} key={index}>
+                        {tag.name}
+                    </button>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
 
 export default MovieTag;
+
+

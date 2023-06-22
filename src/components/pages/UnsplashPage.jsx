@@ -47,7 +47,7 @@ const UnsplashPage = () => {
                 <ContTitle title="unsplash" />
                 <UnsplashSlider images={images}/>
                 <UnsplashSearch onSearch={search} />
-                <UnsplashTag />
+                <UnsplashTag onSearch={search}/>
                 <UnsplashCont images={images} />
             </Contents>
         </>

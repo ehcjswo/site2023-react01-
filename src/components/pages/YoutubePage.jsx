@@ -20,15 +20,6 @@ const YoutubePage = () => {
             .catch((error) => console.log("error", error));
     }
 
-    const tag = async (query) => {
-        await fetch(
-            `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=30&q=${query}&key=AIzaSyB6LEqldGdm11AvV2H1fw3J1gEcfeNZJIk`,
-        )
-            .then((response) => response.json())
-            .then((result) => setYoutubes(result.items.filter(item => item.id.kind === 'youtube#video')))
-            .catch((error) => console.log("error", error));
-    }
-
     useEffect(() => {
         fetch(
             'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=28&q=%EB%89%B4%EC%A7%84%EC%8A%A4&type=video&key=AIzaSyB6LEqldGdm11AvV2H1fw3J1gEcfeNZJIk',
@@ -43,7 +34,7 @@ const YoutubePage = () => {
                 <ContTitle />
                 <YoutubeSlider youtubes={youtubes}/>
                 <YoutubeSearch onSearch={search} />
-                <YoutubeTag tag={tag}/>
+                <YoutubeTag onSearch={search}/>
                 <YoutubeCont youtubes={youtubes} />
             </Contents>
         </>

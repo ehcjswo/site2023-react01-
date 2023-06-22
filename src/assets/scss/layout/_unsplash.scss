@@ -62,20 +62,19 @@
 // unsplash__tag
 .unsplash__tag {
     
-    ul {
+    div {
         display: flex;
         justify-content: center;
         margin-top: 100px;
         margin-bottom: 50px;
 
-        li {
-            a {
-                border: 1px solid #f7100D;
-                padding: 10px 20px;
-                margin: 0 10px;
-                color: #000;
-                border-radius: 15px;
-            }
+        button {
+            border: 1px solid #f7100D;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: #000;
+            border-radius: 15px;
+            background-color: #fff;
         }
     }
 }
@@ -83,6 +82,7 @@
 // unsplash__search
 
 .unsplash__search {
+    margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     input {
@@ -97,7 +97,8 @@
         background-color: #F7100D;
         color: #fff;
         border-radius: 50px;
-        padding: 10px;
+        padding: 10px 20px;
+        margin: 0 10px;
     }
 }
 

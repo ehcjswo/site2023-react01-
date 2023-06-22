@@ -138,6 +138,9 @@ $interval: (
 button {
     cursor: pointer;
 }
+.button {
+    cursor: pointer;
+}
 
 @each $value, $size in $interval {
     .mb#{$value} {

@@ -37,7 +37,7 @@ const MoviePage = () => {
                 <ContTitle title="movie" />
                 <MovieSlider movies={movies} />
                 <MovieSearch onSearch={search} />
-                <MovieTag />
+                <MovieTag onSearch={search}/>
                 <MovieCont movies={movies} />
             </Contents>
         </>

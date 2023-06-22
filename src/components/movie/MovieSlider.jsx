@@ -9,7 +9,7 @@ import "swiper/css/effect-coverflow";
 
 const MovieImg = ({movie}) => {
     return (
-        <a href={`https://www.themoviedb.org/movie/${movie.id}`} target='_black'>
+        <a href={`https://www.themoviedb.org/movie/${movie.id}`} target='_blank' rel="noreferrer">
             <img src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`} alt={movie.title} />   
         </a>
     )

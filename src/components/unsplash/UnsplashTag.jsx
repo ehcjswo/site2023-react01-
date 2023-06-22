@@ -1,43 +1,35 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
-const info = [
+const unsplashTags = [
     {
-        id:"1",
-        title: "night"
+        name: "food"
     },{
-        id:"2",
-        title: "star"
+        name: "chef"
     },{
-        id:"3",
-        title: "city"
+        name: "beef"
     },{
-        id:"4",
-        title: "flower"
+        name: "cook"
     },{
-        id:"5",
-        title: "car"
+        name: "cookie"
     }
 ]
 
-const UnsplashTagList = ({title}) => {
+const UnsplashTag = ({ onSearch }) => {
+    function btnClick(e) {
+        onSearch(e.target.innerText)
+    }
     return (
-        <li>
-            <Link to="/">{title}</Link>
-        </li>
-    )
-}
-
-const UnsplashTag = () => {
-    return (
-        <div className="unsplash__tag">
-            <ul>
-                {info.map((tag, index) => (
-                    <UnsplashTagList key={index} title={tag.title} />
+        <div className="unsplash__tag Nanum5">
+            <div>
+                {unsplashTags.map((tag, index) => (
+                    <button onClick={btnClick} key={index}>
+                        {tag.name}
+                    </button>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
 
 export default UnsplashTag;
+

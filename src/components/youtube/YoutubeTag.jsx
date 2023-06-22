@@ -1,41 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const info = [
+const youtubeTag = [
     {
-        id:"1",
-        title: "코딩 애플"
+        name: "한식"
     },{
-        id:"2",
-        title: "리액트"
+        name: "중식"
     },{
-        id:"3",
-        title: "Next.js"
+        name: "일식"
     },{
-        id:"4",
-        title: "javascript"
+        name: "양식"
     },{
-        id:"5",
-        title: "뉴진스"
+        name: "뉴진스"
     }
 ]
 
-const YoutubeTags = ({title}) => {
+const YoutubeTag = ({ onSearch }) => {
+    function btnClick(e) {
+        onSearch(e.target.innerText)
+    }
     return (
-        <li>
-            <Link to="/">{title}</Link>
-        </li>
-    )
-}
-
-const YoutubeTag = ({tag}) => {
-    return (
-        <div className="youtube__tag">
-            <ul>
-                {info.map((tag, index) => (
-                    <YoutubeTags key={index} title={tag.title} />
+        <div className="youtube__tag Nanum5">
+            <div>
+                {youtubeTag.map((tag, index) => (
+                    <button onClick={btnClick} key={index}>
+                        {tag.name}
+                    </button>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };

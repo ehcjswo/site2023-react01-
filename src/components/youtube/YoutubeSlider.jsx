@@ -9,7 +9,7 @@ import "swiper/css/effect-coverflow";
 
 const YoutubeImg = ({youtube}) => {
     return (
-        <a href={`https://youtube.com/watch?v=${youtube.id.videoId}`} target='_black' >
+        <a href={`https://youtube.com/watch?v=${youtube.id.videoId}`} target='_blank' rel="noreferrer" >
             <img src={youtube.snippet.thumbnails.high.url} alt="유튜브 이미지" />   
         </a>
     )
