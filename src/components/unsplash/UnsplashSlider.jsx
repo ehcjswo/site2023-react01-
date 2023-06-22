@@ -1,11 +1,12 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/scss";
-import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/css/effect-coverflow";
+import "swiper/css/effect-cube";
+
+import { EffectCoverflow, Pagination, Autoplay } from "swiper";
 
 const UnsplashImg = ({image}) => {
     return (
@@ -21,15 +22,28 @@ const UnsplashSlider = ({images}) => {
             <Swiper
                 effect={"coverflow"}
                 grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView = '2'
+                centeredSlides={false}
+                slidesPerView={"3"}
+                initialSlide="3"
                 autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: true,
+                  delay: 0,
+                  disableOnInteraction: true,
+                  stopOnLastSlide: false,
                 }}
-                navigation={false}
-                modules={[Autoplay, Navigation, Pagination]}
+                speed={"5000"}
+                loop={true}
+                loopedSlides= {"5"} 
+                observer={false}
+                observeParents={true}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: false,
+                }}
+                modules={[EffectCoverflow, Pagination, Autoplay]}
+                className="mySwiper"     
             >
                 {images.map((image, index) => (
                         <SwiperSlide key={index}>

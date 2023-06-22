@@ -1,16 +1,16 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/scss";
-import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/css/effect-coverflow";
+
+import { EffectCoverflow, Pagination, Autoplay } from "swiper";
 
 const MovieImg = ({movie}) => {
     return (
         <a href={`https://www.themoviedb.org/movie/${movie.id}`} target='_blank' rel="noreferrer">
-            <img src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`} alt={movie.title} />   
+            <img src={`https://image.tmdb.org/t/p/w1280/${movie.poster_path}`} alt={movie.title} />   
         </a>
     )
 }
@@ -22,14 +22,21 @@ const movieSlider = ({movies}) => {
                         effect={"coverflow"}
                         grabCursor={true}
                         centeredSlides={true}
-                        loop={true}
-                        slidesPerView = '2'
+                        slidesPerView={"5"}
+                        initialSlide="3"
                         autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: true,
+                          delay: 4500,
+                          disableOnInteraction: false,
                         }}
-                        navigation={true}
-                        modules={[Autoplay, Navigation, Pagination]}
+                        coverflowEffect={{
+                          rotate: 50,
+                          stretch: 0,
+                          depth: 100,
+                          modifier: 1,
+                          slideShadows: true,
+                        }}
+                        modules={[EffectCoverflow, Pagination, Autoplay]}
+                        className="mySwiper"
                     >
                         {movies.map((movie, index) => (
                                 <SwiperSlide key={index}>

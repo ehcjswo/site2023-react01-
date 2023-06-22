@@ -1,15 +1,28 @@
 // port__wrap
-.port__wrap {}
+.port__wrap {
+    text-align: center;
+    padding-bottom: 120px;
+
+    p{
+        padding-bottom: 60px;
+    }
+}
 .port__inner {
 
     .port_btn {
         margin-bottom: 50px;
         span {
             background-color: #EAF0FF;
+            
             padding: 15px 30px;
             margin: 10px;
             border-radius: 30px;
-            border: 1px solid var(--color_body)
+            border: 1px solid #abc3ff;
+            transition: background-color 0.3s;
+        }
+        :hover {
+            background-color: #b5c8f7;
+
         }
     }
     .port__conts {
@@ -19,9 +32,11 @@
             width: 32.3%;
 
             .port__header {
-
+                
                 img {
-                    width: 100%;
+                    width: 410px;
+                    height: 300px;
+                    object-fit: cover;
                     border-radius: 10px;
                 }
             }

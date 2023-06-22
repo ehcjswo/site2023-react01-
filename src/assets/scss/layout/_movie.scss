@@ -101,8 +101,38 @@
     }
 }
 
-// movie__search
+// movie__tag
+.movie__tag {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+  
+      li {
+        a {
+          display: inline-block;
+          border: 1px solid #000000;
+          border-radius: 5px;
+          padding: 5px 20px;
+          margin: 0 10px;
+          color: #ec4848;
+          cursor: pointer;
+          font-weight: 700;
+  
+          &:hover {
+            background-color: #eb7474;
+            color: #fff;
+          }
+        }
+      }
+      li.active a {
+        background-color: #ec4848;
+        color: #fff;
+      }
+    }
+  }
 
+// movie__search
 .movie__search {
     margin-bottom: 50px;
     text-align: center;
@@ -121,4 +151,8 @@
         border-radius: 50px;
         padding: 10px;
     }
+}
+
+.swiper {
+    padding: 20px 0 50px;
 }
