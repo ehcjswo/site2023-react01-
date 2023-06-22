@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const info = [
     {
@@ -22,7 +23,7 @@ const info = [
 const MovieTags = ({title}) => {
     return (
         <li>
-            <a href="#">{title}</a>
+            <Link to="/">{title}</Link>
         </li>
     )
 }
