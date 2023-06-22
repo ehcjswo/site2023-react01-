@@ -1,0 +1,118 @@
+// unsplash__section
+.unsplash__wrap {
+    overflow: hidden;
+
+}
+.unsplash__inner {
+    height: 600px;
+    
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    a {
+        padding: 15px 60px;
+        background-color: #446EEA;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+
+    .unsplash__item {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        
+        > div {
+            width: 400px;
+            margin-right: 20px;
+
+            > img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        
+        
+    }
+}
+
+
+// unsplash__page
+.unsplash__cont {
+
+    ul {
+
+        column-count:4;
+        column-gap: 20px;
+        
+        li {
+            margin-bottom: 20px;
+        }
+    }
+}
+// unsplash__tag
+.unsplash__tag {
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        li {
+            a {
+                border: 1px solid #f7100D;
+                padding: 10px 20px;
+                margin: 0 10px;
+                color: #000;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
+// unsplash__search
+
+.unsplash__search {
+    margin-bottom: 50px;
+    text-align: center;
+    input {
+        border: 1px solid #E8ECF2;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        min-width: 300px;
+        margin-right: 10px;
+    }
+    button {
+        background-color: #F7100D;
+        color: #fff;
+        border-radius: 50px;
+        padding: 10px;
+    }
+}
+
+// unsplash__slider
+.unsplash__slider {
+    width: 100%;
+    height: 100%;
+}
+.unsplash__slider a {
+  
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.swiper-wrapper {
+    height: 100%;
+    align-items: center;
+}

@@ -1,0 +1,48 @@
+// movies__wrap
+.movies__wrap {
+    overflow: hidden;
+
+}
+.movies__inner {
+    height: 720px;
+    
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    a {
+        padding: 15px 60px;
+        background-color: #FF3344;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+
+    .movies__item {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        
+        > div {
+            width: 300px;
+            height: 600px;
+            // background-color: #999;
+            margin-right: 20px;
+
+            > img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        
+        
+    }
+}

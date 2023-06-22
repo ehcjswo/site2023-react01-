@@ -1,0 +1,59 @@
+// port__wrap
+.port__wrap {}
+.port__inner {
+
+    .port_btn {
+        margin-bottom: 50px;
+        span {
+            background-color: #EAF0FF;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 30px;
+            border: 1px solid var(--color_body)
+        }
+    }
+    .port__conts {
+        @include flex-between;
+        flex-wrap: wrap;
+        .port {
+            width: 32.3%;
+
+            .port__header {
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .port__body {
+                margin-top: 10px;
+                margin-bottom: 50px;
+                text-align: left;
+                display: flex;
+
+                
+
+                span img {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #999;
+                    border-radius: 50%;
+                }
+                .title {
+                    font-size: 20px;
+                    color: var(--color_body);
+                    font-weight: 700;
+                    line-height: 1.5;
+                }
+                .desc {
+                    font-size: 16px;
+                    color: #2c3a4b;
+                    font-weight: 300;
+                }
+            }
+            
+        }
+    }
+}

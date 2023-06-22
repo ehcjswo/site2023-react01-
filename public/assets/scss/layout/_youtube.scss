@@ -1,0 +1,116 @@
+// youtube__wrap
+.youtube__wrap {
+    overflow: hidden;
+
+}
+.youtube__inner {
+    height: 600px;
+    
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    a {
+        padding: 15px 60px;
+        background-color: #FF3344;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 30px;
+    }
+
+    .youtube__item {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        
+        > div {
+            width: 400px;
+            margin-right: 20px;
+
+            > img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+        
+        
+    }
+}
+
+//--- youtube__page ------------------------------------------------
+.youtube__page {}
+.youtube__slide {
+    display: none;
+}
+.youtube__search {
+    text-align: center;
+    margin-bottom: 50px;
+
+    input {
+        border: 1px solid #E8ECF2;
+        font-size: 16px;
+        border-radius: 50px;
+        min-width: 300px;
+        margin-right: 10px;
+        
+    }
+    button {
+        @include button (#f7100D, #fafafa);
+        // @include border(50px);
+        border-radius: 50px;
+    }
+
+}
+.youtube__tag {
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        li {
+            a {
+                border: 1px solid #f7100D;
+                padding: 10px 20px;
+                margin: 0 10px;
+                color: #000;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+.youtube__cont {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        li {
+            width: 24.333%;
+            margin-bottom: 4%;
+
+            img {
+                border-radius: 4px;
+            }
+
+            span {
+                display: block;
+                margin: 4px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
