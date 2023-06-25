@@ -5,7 +5,7 @@ const Movies = (props) => {
         <section id="moviesSection" className={props.attr}>
             <div className="movies__inner">
                 <div className="movies__text">
-                    <h3>개발자를 위한 추천 영화</h3>
+                    <h3>요리를 위한 추천 영화</h3>
                     <p>
                         더 다양한 강의는 유튜브를 통해 제공하고 있습니다.
                         <br />
