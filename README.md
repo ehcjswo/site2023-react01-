@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+## react.js를 사용한 사이트 만들기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://raw.githubusercontent.com/ehcjswo/site2023-react01-/main/src/assets/images/intro/gitImg01.jpg" />
+<br><br>
+ 
+- 이 사이트는 React를 기반으로 만든 사이트로, 셰프와 요리에 대한 정보를 모아두었습니다.
+- 또한 fetch를 이용해 다양한API(Youtube API, Unsplash API, Movie API 등등)의 정보를 받아오는 방법과 React Hook을 사용해 상태를 관리하는 방법을 학습하였습니다.
+<br><br>
 
-## Available Scripts
+- Live Demo : https://dh2023-react01.netlify.app/
 
-In the project directory, you can run:
+## 사용 스택 
+- React: JavaScript 라이브러리로 사용자 인터페이스를 구축하기 위해 사용됩니다.
+- react-router-dom: React 애플리케이션의 클라이언트 사이드 라우팅을 관리하는 라이브러리입니다.
+- Route: react-router-dom에서 제공하는 라우터 구성 요소 중 하나로, 경로에 따라 특정 컴포넌트를 렌더링합니다.
+- Routes: react-router-dom에서 제공하는 라우터 구성 요소로, 여러 Route를 그룹화하고, 라우팅 구성을 선언적으로 표현할 수 있도록 도와줍니다.
+- fetch: 네트워크 요청을 보내기 위해 사용되는 자바스크립트 함수로, 비동기적으로 데이터를 가져오기 위해 사용됩니다. 해당 코드에서는 영화 데이터를 API로부터 가져오는데 사용되었습니다.
+<br><br>
+- useState: React 훅 중 하나로, 함수형 컴포넌트에서 상태(state)를 사용할 수 있게 해줍니다. 해당 코드에서는 영화 데이터를 상태로 관리하기 위해 사용되었습니다.
+- useEffect: React 훅 중 하나로, 컴포넌트의 렌더링 이후에 실행되는 사이드 이펙트를 처리할 수 있도록 도와줍니다. 해당 코드에서는 초기 렌더링 시에 API를 호출하여 영화 데이터를 가져오는데 사용되었습니다.
+- useRef: React 훅 중 하나로, 함수형 컴포넌트에서 DOM 요소에 접근하기 위해 사용됩니다. 해당 코드에서는 검색어 입력란(input 요소)에 접근하기 위해 사용되었습니다.
+<br><br>
 
-### `npm start`
+## 구현 내역
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- swiper를 활용한 이미지 슬라이드
+- router기능을 활용한 페이지
+- 탭 메뉴로 구성된 시대별 유명 작품
+- Youtube 검색, 태그 기능
+- Unsplash 랜덤 이미지 슬라이드, 검색, 태그 기능
+- Movie 이미지 슬라이드, 검색, 태그 기능
+<br>
