@@ -1,13 +1,13 @@
 ## react.js를 사용한 사이트 만들기
 
-<img src="https://raw.githubusercontent.com/ehcjswo/site2023-react01-/main/src/assets/images/intro/gitImg01.jpg" />
+<img src="https://raw.githubusercontent.com/ehcjswo/site2023-react02-/main/src/assets/images/gitImg01.jpg" />
 <br><br>
  
-- 이 사이트는 React를 기반으로 만든 사이트로, 셰프와 요리에 대한 정보를 모아두었습니다.
-- 또한 fetch를 이용해 다양한API(Youtube API, Unsplash API, Movie API 등등)의 정보를 받아오는 방법과 React Hook을 사용해 상태를 관리하는 방법을 학습하였습니다.
+- 이 사이트는 React를 기반으로 만든 사이트로, https://programmers.co.kr/ 프로그래머스 카피 싱글 페이지 입니다.
+- 컴포넌트 기반 접근 방식은 웹 개발을 보다 효율적이고 유지보수를 쉽게 만들어 줍니다.
 <br><br>
 
-- Live Demo : https://dh2023-react01.netlify.app/
+- Live Demo : https://dh2023-react02.netlify.app/
 
 ## 사용 스택 
 - React: JavaScript 라이브러리로 사용자 인터페이스를 구축하기 위해 사용됩니다.
@@ -25,7 +25,7 @@
 
 - swiper를 활용한 이미지 슬라이드
 - router기능을 활용한 페이지
-- 탭 메뉴로 구성된 시대별 유명 작품
+- 탭 메뉴로 구성된 페이지
 - Youtube 검색, 태그 기능
 - Unsplash 랜덤 이미지 슬라이드, 검색, 태그 기능
 - Movie 이미지 슬라이드, 검색, 태그 기능
