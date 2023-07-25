@@ -7,7 +7,7 @@
 - 또한 fetch를 이용해 다양한API(Youtube API, Unsplash API, Movie API 등등)의 정보를 받아오는 방법과 React Hook을 사용해 상태를 관리하는 방법을 학습하였습니다.
 <br><br>
 
-- Live Demo : https://dh2023-react02.netlify.app/
+- Live Demo : https://dh2023-react01.netlify.app/
 
 ## 사용 스택 
 - React: JavaScript 라이브러리로 사용자 인터페이스를 구축하기 위해 사용됩니다.
